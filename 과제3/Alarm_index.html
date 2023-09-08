@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Web Page</title>
+    <link rel="stylesheet" href="/과제3/assets/css/Alarm_styles.css">
+</head>
+<body>
+    <div class="battery">
+        <div class="battery-level"></div>
+    </div>
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="alarms">
+        <h2>Alarm Status</h2>
+        <ul id="alarms-list"></ul>
+    </div>
+
+    <div class="alarm-settings">
+        <input type="number" id="hour" placeholder="Hour" min="0" max="23">
+        <input type="number" id="minute" placeholder="Minute" min="0" max="59">
+        <input type="number" id="second" placeholder="Second" min="0" max="59">
+        <button onclick="addAlarm()">Add Alarm</button>
+    </div>
+
+    <script src="/과제3/assets/js/Alarm_scripts.js"></script>
+</body>
+</html>
