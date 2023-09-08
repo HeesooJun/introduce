@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.battery {
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.battery-level {
+    height: 100%;
+    background-color: green;
+}
+
+.clock {
+    font-size: 24px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.alarms {
+    margin-top: 20px;
+}
+
+.alarm-settings {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    margin-right: 10px;
+}
