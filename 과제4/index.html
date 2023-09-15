@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>일정 관리</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="pb-10" id="header"></div>
+
+    <img src="/과제4/assets/images/travel.png" alt="Travel Image" class="travel-image">
+    <main class="p-4 pt-10 flex ">
+        <!-- 왼쪽 섹션: 달력 -->
+        <section class="flex-1">
+            <div class="px-12 mb-6 flex justify-between">
+                <button onclick="goToPrevMonth()">&#8592;</button>
+                <span id="calendarTitle">YYYY.MM</span>
+                <button onclick="goToNextMonth()">&#8594;</button>
+            </div>
+
+            <div class="px-12" id="calendar"></div>
+        </section>
+
+        <!-- 오른쪽 섹션: 일정 관리 -->
+        <section class="pl-12 flex-1 border-l">
+            <div class="bg-gray-100 rounded pl-12 py-20 mr-12">
+                <h2 class="text-lg font-semibold mb-4">일정 관리</h2>
+
+                <!-- 일정 추가 -->
+                <div class="mb-4">
+                    <input type="date" id="scheduleDate" class="border p-2 rounded mr-2" onchange="onChangeDate()">
+                    <input type="text" id="newSchedule" placeholder="새 일정을 입력하세요" class="border p-2 rounded mr-2">
+                    <button onclick="addSchedule()" class="bg-indigo-500 text-white p-2 rounded">추가</button>
+                </div>
+
+                <!-- 선택한 날짜의 일정 목록 -->
+                <h3 id="selectedDateTitle" class="text-md font-semibold mb-2"></h3>
+                <ul id="scheduleList" class="list-decimal pl-5"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div class="pt-24" id="footer"></div>
+
+    <script src="assets/js/load.js"></script>
+    <script src="assets/js/schedule.js"></script>
+    <script src="assets/js/calender.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="pb-10" id="header"></div>
+
+    <Main class="container mx-auto mt-10">
+        <div class="max-w-md mx-auto bg-white p-8 border border-gray-300 rounded-lg">
+            <h2 class="text-2xl font-bold mb-16 text-gray-900">로그인</h2>
+            <form id="loginForm">
+                <div class="mb-10">
+                    <label class="block text-gray-900 mb-2" for="username">아이디</label>
+                    <input class="border-2 w-full p-2 rounded-lg" type="text" id="username" placeholder="아이디를 입력해주세요"
+                        required>
+                    <span id="usernameCheck" class="text-red-500"></span>
+                </div>
+                <div class="mb-10">
+                    <label class="block text-gray-900 mb-2" for="password">비밀번호</label>
+                    <input class="border-2 w-full p-2 rounded-lg" type="password" id="password"
+                        placeholder="비밀번호를 입력해주세요" required>
+                    <span id="passwordCheck" class="text-red-500"></span>
+                </div>
+                <div class="pt-10">
+                    <button type="submit" class="bg-indigo-500 text-white p-2 w-full rounded-lg">로그인</button>
+                </div>
+            </form>
+        </div>
+    </Main>
+
+    <div class="pt-24" id="footer"></div>
+
+    <script src="assets/js/load.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
